@@ -8,6 +8,7 @@
         
         *{
             box-sizing: border-box;
+            padding: auto;
         }
         .parent{
              height: 300px;
@@ -26,9 +27,34 @@
             height: 100px;
             width: 100px;
         }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid;
+        
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <img src="./logo.jfif" alt="">
+            <ul>
+
+               <li><a href="#">Home</a></li> 
+               <li><a href="#">About</a></li> 
+               </ul>
+               <ul>
+               <li>Sign In</li>
+               <li>Sign Up</li>
+            </ul>
+
+        </nav>
+    </header>
     <div class="parent">
         <div class="child"> flex-item-1</div>
         <div class="child"> flex-item-2</div>
