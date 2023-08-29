@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* css reset */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul{
+            list-style: none;
+        }
+        a{
+            color: rgb(10, 17, 23);
+            text-decoration: none;
+        }
+       ul{
+        border: 1px solid;
+        display: flex;
+        height: 200px;
+        gap: 1rem;
+        /* justify content: end; */
+        justify-content:center;
+        align-items: center;
+        height: 50px;
+
+
+       }
+       .flexbox{
+        background-color: rgb(247, 145, 21);
+        height:200px;
+        display:flex;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+       }
+       .flex-item{
+        height:100px;
+        width: 200px;
+        border: 1px solid;
+       }
+    </style>
 </head>
+<!---flex should given to parent element----->
 <body>
-    
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+  </header>  
+    <hr>
+    <div class="parent flexbox">
+        <div class="child flex-item"> flex-item-1</div>
+        <div class="child flex-item"> flex-item-2</div>
+        <div class="child flex-item"> flex-item-3</div>
+
+    </div>
 </body>
 </html>
